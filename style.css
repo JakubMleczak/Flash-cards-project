@@ -1,0 +1,64 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+nav {
+    padding: 0;
+    margin: 0;
+    background-color: skyblue;
+    display: flex;
+    height: 50px;
+    ;
+
+}
+nav h1
+{
+    margin: auto;
+    font-size: 2em;
+}
+section #box h2
+{   
+    text-align: center;
+}
+section #box {
+    background-color: azure;
+    position: relative;
+    height: 40vh;
+    margin:  auto; 
+    width: 15%;
+    margin-left: 20vh;
+    
+}
+
+section {
+    background-color: sandybrown;
+    height: 80vh;
+    display: flex;
+    background-image: url(t%C5%82o.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: center;
+
+
+}
+
+section img {
+    width: 100%;
+}
+
+main {
+    display: flex;
+    height: 50vh;
+}
+
+main img {
+    width: 50%;
+}
+
+footer {
+    display: flex;
+    height: 40px;
+    ;
+    background-color: blueviolet;
+}
