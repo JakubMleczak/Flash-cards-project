@@ -1,55 +1,78 @@
-body {
+*{
     padding: 0;
-    margin: 0;
+    margin: 0; 
 }
 
 nav {
     padding: 0;
     margin: 0;
-    background-color: skyblue;
+    background-color: #4F8AA8;
+   
     display: flex;
-    height: 50px;
-    ;
+    height: auto;
+    min-height: 10em;
+    
 
 }
-nav h1
-{
+
+nav h1 {
     margin: auto;
     font-size: 2em;
 }
-section #box h2
-{   
+
+section #box h2 {
     text-align: center;
-}
-section #box {
-    background-color: azure;
-    position: relative;
-    height: 40vh;
-    margin:  auto; 
-    width: 15%;
-    margin-left: 20vh;
-    
 }
 
 section {
-    background-color: sandybrown;
+    
     height: 80vh;
     display: flex;
-    background-image: url(t%C5%82o.jpg);
-    background-size: cover;
-    background-attachment: scroll;
-    background-position: center;
+    flex-wrap: wrap;
+    
 
 
 }
+#tlo
+{
+    background-image: url(wall.jpg);
+}
 
-section img {
+section #box {
+    background-color:  #8596A6;
+padding: 0;
+    margin: 0;
+   height: 100%;
+    width: 50%;
+    flex: auto;
+    float: left;
+}
+section #srodek
+{
+    margin: auto;
+    width: 70%;
+    height: 60%;
+    background-color: aqua;
+    padding: 0;
+        
+    
+}
+section #zdj {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+
+section #zdj img {
     width: 100%;
+    height: 100%;
 }
 
 main {
     display: flex;
-    height: 50vh;
+    height: 50%;
+    width: 100%;
+    min-height: 
 }
 
 main img {
@@ -58,7 +81,8 @@ main img {
 
 footer {
     display: flex;
-    height: 40px;
-    ;
-    background-color: blueviolet;
+    
+    min-height: 40px;
+   
+    background-color: #C1C9D9;
 }
