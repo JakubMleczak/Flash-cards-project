@@ -13,6 +13,7 @@ main {
   height:100vh;
   padding: 0;
   margin: 0;
+  transition: 1s;
 float: left;
 }
 section
@@ -20,4 +21,9 @@ section
 padding: 20px;
 
   float: left;
+}
+main:hover
+{
+
+  width: 90%;
 }
