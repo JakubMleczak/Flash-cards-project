@@ -9,7 +9,6 @@
        include("header.php");
        include("nav.php");
        include("footer.php");
-       include("main.php");
        
    </php>
     
