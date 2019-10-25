@@ -8,7 +8,7 @@ main {
   background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
-  width: 60%;
+  width: 90%;
 
   height:100vh;
   padding: 0;
@@ -18,12 +18,9 @@ float: left;
 }
 section
 {
-padding: 20px;
 
+  transition: 1s;
   float: left;
-}
-main:hover
-{
-
-  width: 90%;
+  width: 7%;
+  height: 100vh;
 }
