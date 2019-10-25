@@ -1,88 +1,23 @@
 *{
     padding: 0;
-    margin: 0; 
-}
-
-nav {
-    padding: 0;
     margin: 0;
-    background-color: #4F8AA8;
-   
-    display: flex;
-    height: auto;
-    min-height: 10em;
-    
-
-}
-
-nav h1 {
-    margin: auto;
-    font-size: 2em;
-}
-
-section #box h2 {
-    text-align: center;
-}
-
-section {
-    
-    height: 80vh;
-    display: flex;
-    flex-wrap: wrap;
-    
-
-
-}
-#tlo
-{
-    background-image: url(wall.jpg);
-}
-
-section #box {
-    background-color:  #8596A6;
-padding: 0;
-    margin: 0;
-   height: 100%;
-    width: 50%;
-    flex: auto;
-    float: left;
-}
-section #srodek
-{
-    margin: auto;
-    width: 70%;
-    height: 60%;
-    background-color: aqua;
-    padding: 0;
-        
-    
-}
-section #zdj {
-    float: left;
-    width: 50%;
-    height: 100%;
-}
-
-section #zdj img {
-    width: 100%;
-    height: 100%;
 }
 
 main {
-    display: flex;
-    height: 50%;
-    width: 100%;
-    min-height: 
-}
+  background-image: url(lodka.jpg);
+  background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+  width: 60%;
 
-main img {
-    width: 50%;
+  height:100vh;
+  padding: 0;
+  margin: 0;
+float: left;
 }
+section
+{
+padding: 20px;
 
-footer {
-    display: flex;
-    
-    min-height: 40px;
-   
-    background-color: #C1C9D9;
+  float: left;
 }
