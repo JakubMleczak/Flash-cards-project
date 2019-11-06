@@ -28,23 +28,29 @@ section
   height: 50vh;
   display: none;
   margin-top: 25vh;
-  overflow: visible;
-
+  overflow:visible;
+white-space: nowrap;
+text-align: center;
+}
+#rozwiniecie form
+{
+  font-size: 30px;
 }
 #zaloguj
 {
 
-  width: 20px;
+  width: 10px;
   padding: 10px;
   margin-top: 40vh;
-  font-size: 50px;
+  font-size: 80px;
+
 }
 h1{
  font-size: 50px;
 }
 #rozwiniecie p
 {
-  font-size: 40px;
+  font-size: 60px;
   padding: 10px;
 }
 section input
@@ -53,32 +59,88 @@ section input
       border-bottom: 1px solid red;
       background: transparent;
       outline: none;
-      color: #fff;
+      color: black;
       font-size: 16px;
       padding: 10px;
+      width: 50%;
 }
 section input[type="submit"]
 {
     border: none;
     outline: none;
-    height: 40px;
+    height: 70px;
     background: #1c8adb;
     color: #fff;
-    font-size: 18px;
-    width: 100px;
+    font-size: 40px;
+    width: 150px;
     border-radius: 20px;
     margin: 20px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1000px)
+{
    #sekcja{
-    width: 100%;
+    width: 100% !important;
   }
   main{
     display: none;
   }
+  section
+  {
+    background-image: url(lodka.jpg);
+
+    background-size:cover;
+  }
+
   #rozwiniecie
   {
-    width:90%;
+    width:100%;
+    font-size: 130px;
+    white-space: normal;
+    text-align: center;
   }
+    #rozwiniecie h1
+    {
+      font-size: 170px;
+    }
+  #rozwiniecie form
+  {
+
+  background-color: rgba(80,80,80,.3);
+  color: white;
+  }
+  #rozwiniecie form p
+  {
+    font-size: 100px;
+  }
+    #rozwiniecie input
+    {
+      width: 70%;
+      height: 100px;
+      font-size: 60px;
+    }
+    ::placeholder
+      {
+      color: darkblue;
+      opacity: 1;
+      }
+    {
+      width: 70%;
+      height: 100px;
+      font-size: 60px;
+    }
+    #zwiniete
+    {
+      margin: 20%;
+    }
+    #zaloguj
+    {
+      font-size: 150px;
+      background: white;
+      color: black;
+      border-radius: 40px;
+      width: 100%;
+      text-align: center;
+
+    }
 }
