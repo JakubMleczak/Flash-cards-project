@@ -4,21 +4,28 @@
 }
 
 main {
-  background-image: url(lodka.jpg);
-  background-repeat: no-repeat;
+    background-image: url(lodka.jpg);
+    background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
-  width: 90%;
-
-  height:100vh;
-  padding: 0;
-  margin: 0;
-  transition: 1s;
-float: left;
+    width: 85%;
+    height:100vh;
+    padding: 0;
+    margin: 0;
+    transition: 1s;
+    float: left;
+}
+@media only screen and (max-width: 800px) {
+   #rozwiniecie{
+    width: 100%;
+  }
+  #zaloguj
+  {
+    width: 100%;
+  }
 }
 section
 {
-
   transition: 1s;
   float: left;
   width: 7%;
@@ -26,10 +33,9 @@ section
 }
 #rozwiniecie
 {
-height: 50vh;
+  height: 50vh;
   display: none;
   margin-top: 25vh;
-  margin-left: 7vw;
   overflow: visible;
 
 }
@@ -37,9 +43,9 @@ height: 50vh;
 {
 
   width: 20px;
-padding: 10px;
-margin-top: 40vh;
-font-size: 50px;
+  padding: 10px;
+  margin-top: 40vh;
+  font-size: 50px;
 }
 h1{
  font-size: 50px;
@@ -61,7 +67,7 @@ section input
 }
 section input[type="submit"]
 {
-  border: none;
+    border: none;
     outline: none;
     height: 40px;
     background: #1c8adb;
