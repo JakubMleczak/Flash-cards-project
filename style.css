@@ -8,7 +8,7 @@ main {
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
-    width: 85%;
+    width: 80%;
     height:100vh;
     padding: 0;
     margin: 0;
@@ -20,7 +20,7 @@ section
 {
   transition: 1s;
   float: left;
-  width: 7%;
+  width: 20%;
   height: 100vh;
 }
 #rozwiniecie
