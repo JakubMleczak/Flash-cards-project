@@ -1,13 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Bungee+Shade|Poiret+One&display=swap&subset=latin-ext');
 *{
     padding: 0;
     margin: 0;
+font-family: 'Poiret One', cursive;
 }
 
 main {
     background-image: url(lodka.jpg);
     background-repeat: no-repeat;
     background-position: right;
-    background-size: cover;
+    background-size:cover;
     width: 80%;
     height:100vh;
     padding: 0;
@@ -15,7 +18,10 @@ main {
     transition: 1s;
     float: left;
 }
-
+body
+{
+  overflow: hidden;
+}
 section
 {
   transition: 1s;
@@ -23,18 +29,23 @@ section
   width: 20%;
   height: 100vh;
 }
+#zaloguj
+{
+
+}
 #rozwiniecie
 {
   height: 50vh;
   display: none;
-  margin-top: 25vh;
-  overflow:visible;
-white-space: nowrap;
+  margin-top: 15vh;
+
 text-align: center;
+
 }
 #rozwiniecie form
 {
   font-size: 30px;
+  margin-top: 20px;
 }
 #zaloguj
 {
@@ -45,13 +56,15 @@ text-align: center;
   font-size: 80px;
 
 }
-h1{
- font-size: 50px;
+#rozwiniecie h1{
+ font-size: 80px;
 }
 #rozwiniecie p
 {
   font-size: 60px;
-  padding: 10px;
+  padding: 20px;
+
+
 }
 section input
 {
@@ -60,9 +73,10 @@ section input
       background: transparent;
       outline: none;
       color: black;
-      font-size: 16px;
+      font-size: 30px;
       padding: 10px;
-      width: 50%;
+      margin-bottom: 30px;
+      width: 70%;
 }
 section input[type="submit"]
 {
@@ -74,7 +88,9 @@ section input[type="submit"]
     font-size: 40px;
     width: 150px;
     border-radius: 20px;
-    margin: 20px;
+    margin: 40px;
+    font-weight: bold;
+
 }
 
 @media (max-width: 1000px)
@@ -96,7 +112,7 @@ section input[type="submit"]
   {
     width:100%;
     font-size: 130px;
-    white-space: normal;
+    white-space:nowrap;
     text-align: center;
   }
     #rozwiniecie h1
@@ -106,7 +122,7 @@ section input[type="submit"]
   #rozwiniecie form
   {
 
-  background-color: rgba(80,80,80,.3);
+
   color: white;
   }
   #rozwiniecie form p
@@ -118,10 +134,13 @@ section input[type="submit"]
       width: 70%;
       height: 100px;
       font-size: 60px;
+      color: black;
+      font-weight: bold;
     }
     ::placeholder
       {
-      color: darkblue;
+        font-weight: normal;
+    color: #EEDFFF;
       opacity: 1;
       }
     {
