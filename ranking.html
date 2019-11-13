@@ -8,7 +8,7 @@
 </head>
 
 <body>
-  <section id="fiszka">
+  <section id="ranking">
 
     <div id="wyloguj" class="icon">
       <a href="main.html"><img src="log.png" alt="wyloguj"></a>
@@ -27,37 +27,19 @@ dodawanie div przez php
      -->
   <main>
 
-    <div id="nastepne">
 
-<img src="lewo.png" alt="">
+    <div id="title">
+      <p>Ranking dla klasy XY</p>
     </div>
-    <div id="poprzednie">
-<img src="prawo.png" alt="">
+    <div id="podium">
+      <img src="podium.png" alt="">
     </div>
-    <div id="nazwa" onclick="zmiana()">
-      <p>fiszka</p>
-    </div>
-    <div id="tlumaczenie" onclick="zmianab()">
-      <p>tlumaczenie </p>
-     </div>
-     
+
+
   </main>
 
   </section>
-  <script>
-function zmiana()
-{
-  document.getElementById('nazwa').style.zIndex= "1";
-  document.getElementById('tlumaczenie').style.zIndex= "2";
 
-}
-function zmianab()
-{
-  document.getElementById('nazwa').style.zIndex= "2";
-  document.getElementById('tlumaczenie').style.zIndex = "1";
-
-}
-  </script>
 </body>
 </html>
 

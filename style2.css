@@ -18,38 +18,32 @@ section
     width: 50vw;
     position: fixed;
 }
-
-#wyloguj
+.icon
 {
   position: absolute;
   top:20px;
-  left: 80px;
   width: 90px;
   height:90px;
   z-index: 1;
   position: fixed;
-
 }
-#wyloguj img
+#wyloguj
+{
+
+  left: 100px;
+}
+.icon img
 {
   width: 100%;
   height: 100%;
 }
 #back
 {
-  position: absolute;
-  top:20px;
   left: 200px;
-  width: 90px;
-  height:90px;
-  z-index: 1;
-  position: fixed;
-
 }
-#back img
+#rank
 {
-  width: 100%;
-  height: 100%;
+  left: 300px;
 }
 main
 {
@@ -175,6 +169,25 @@ right: 15%;
 background-color: transparent;
 
 }
+#ranking
+{
+background-image: url("ludblur.jpg");
+width: 100vw;
+height: 100vh;
+background-position: 0px;
+position: static;
+
+}
+#ranking main #title
+{
+
+margin-right: 40vh;
+height: 25vh;
+}
+#ranking main #title p
+{
+  padding: 5vh;
+}
 #jezyk2 div a, #zestawy div a
 {
   display:block;
@@ -182,6 +195,18 @@ background-color: transparent;
      height: 100%;
      color: inherit;
      text-decoration:none;
+}
+#podium
+{
+  height: 70vh;
+}
+
+#podium img
+{
+  width: 90%;
+  height: 70%;
+  padding-left: 10%;
+  padding-top: 23%;
 }
 @media (max-width: 1000px)
 {
