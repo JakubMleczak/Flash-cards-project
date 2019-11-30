@@ -8,7 +8,7 @@ font-family: 'Poiret One', cursive;
 
 section
 {
-    background-image: url(lud.jpg);
+    background-image: url(img/lud.jpg);
     background-size: cover;
   background-position:-320px;
     height: 100%;
@@ -103,7 +103,7 @@ main div p
 
 #fiszka
 {
-background-image: url("ludblur.jpg");
+background-image: url("img/ludblur.jpg");
 width: 100vw;
 height: 100vh;
 background-position: 0px;
@@ -176,7 +176,7 @@ background-color: transparent;
 }
 #dod
 {
-  background-image: url("ludblurBIG.jpg");
+  background-image: url("img/ludblurBIG.jpg");
   background-attachment: fixed;
   min-width: 100vw;
 height: auto;
@@ -434,12 +434,17 @@ display: block;
 
 
 }
+td img
+{
+  width: 70px;
+  height: 70px;
+}
 
 @media (max-width: 1000px)
 {
 #jezyk div
 {
-min-width: 100vh;
+min-width: 100vw;
 font-size: 110px;
 }
 section
@@ -457,7 +462,7 @@ font-size: 210px;
   width: 200px;
   height: 200px;
 }
-#dod #back
+#dod, #back
 {
 top:20px;
   left: 300px;
@@ -590,14 +595,18 @@ min-height: 100vh;
 }
 table th,td
 {
-  font-size: 100px;
+  font-size: 50px;
 
 }
- main div
+#usertab
 {
-  height: auto;
+  overflow:auto;
 }
 .nazwa
 {
   font-size: 100px;
+}
+#dodawanie div
+{
+  height: 100%;
 }

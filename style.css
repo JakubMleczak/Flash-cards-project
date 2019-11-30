@@ -7,7 +7,7 @@ font-family: 'Poiret One', cursive;
 }
 
 main {
-    background-image: url(lodka.jpg);
+    background-image: url("img/lodka.jpg");
     background-repeat: no-repeat;
     background-position: right;
     background-size:cover;
@@ -103,7 +103,7 @@ section input[type="submit"]
   }
   section
   {
-    background-image: url(ludblur.jpg);
+    background-image: url(img/ludblur.jpg);
 
     background-size:cover;
 
