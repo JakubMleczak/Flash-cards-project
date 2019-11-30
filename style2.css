@@ -39,12 +39,10 @@ section
 }
 #back
 {
-  left: 200px;
+  left: 100px;
+  top: 150px;
 }
-#rank
-{
-  left: 300px;
-}
+
 main
 {
   position: absolute;
@@ -113,14 +111,6 @@ width: 100vw;
 height: 100vh;
 background-position: 0px;
 position: static;
-}
-#dod
-{
-  background-image: url("ludblur.jpg");
-  width: 100vw;
-  height: 100vh;
-  background-position: 0px;
-  position: static;
 }
 #fiszka main
 {
@@ -204,27 +194,43 @@ height: 25vh;
      color: inherit;
      text-decoration:none;
 }
+#dod
+{
+  background-image: url("ludblurBIG.jpg");
+  background-attachment: fixed;
+  width: 100vw;
+height: auto;
+  background-position: 0px;
+  position: static;
+
+}
 
 #dodawanie
 {
-  height: 90vh;
-  width: 70vw;
 
+  width: 70vw;
+color: white;
   margin:  auto;
-  position:absolute;
-  top: 50%;
+  position:relative;
+  /* top: 50%;
   left:50%;
-  transform: translateX(-50%) translateY(-50%)
+  transform: translateX(-50%) translateY(-50%); */
+
+}
+.linia
+{
+  height: auto;
 }
 #dodawanie form
 {
   font-size: 30px;
   margin-top: 20px;
   width: 100%;
-  width: 100%;
+
 
 
 }
+
 #zaloguj
 {
 
@@ -245,6 +251,97 @@ height: 25vh;
 
 
 }
+#dodawanie ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgray;
+  opacity: 1;
+}
+#user
+{
+
+  width: 40vw;
+color: white;
+  margin:  auto;
+  position:relative;
+
+}
+
+#user form
+{
+  font-size: 30px;
+  margin-top: 10px;
+  width: 100%;
+
+
+
+}
+
+#zaloguj
+{
+
+  width: 10px;
+  padding: 10px;
+  margin-top: 40vh;
+  font-size: 80px;
+
+}
+#user h1{
+ font-size: 80px;
+}
+#user p
+{
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+color: white;
+
+}
+#user ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgray;
+  opacity: 1;
+}
+#user div
+{
+  height: auto;
+}
+#rola
+{
+  color: white;
+  width:50%;
+  float: left;
+  background-color: inherit;
+}
+#rola input , #klasa input
+{  border: none;
+color: black;
+margin-right: 10px;
+width: auto;
+
+}
+#rola p, #klasa p
+{
+  text-align: inherit;
+}
+#klasa
+{   color: white;
+  background-color: inherit;
+  width: 50%;
+  float: left;
+}
+#srodek
+{
+
+    margin: auto;
+    display: block;
+margin-bottom: 30px;
+}
+body, html
+{
+width: 100%;
+height: 100%;
+
+}
+
+
 section input
 {
       border: none;
@@ -266,11 +363,26 @@ section input
 .add
 {
   width: 100%;
+  background-color:inherit;
 
-
+}
+.add button
+{
+  border: none;
+  outline: none;
+  height: 60px;
+  background: #1c8adb;
+  color: #fff;
+  font-size: 30px;
+  width: 130px;
+  border-radius: 20px;
+display: block;
+  font-weight: bold;
+  margin: auto;
 }
 .linia
 {
+  background-color:inherit !important;
 width: 80%;
 margin: auto;
 }
@@ -286,6 +398,62 @@ section input[type="submit"]
     border-radius: 20px;
     margin: 40px;
     font-weight: bold;
+
+
+}
+#przyciskdodaj
+{
+  margin: auto;
+}
+#usertab table
+{
+  border: 7px solid black;
+  font-size: 30px;
+  width: 100%;
+  border-radius: 40px;
+  text-align: center;
+border-spacing: 0;
+}
+
+#usertab table th
+{  border-bottom: 5px solid black;
+padding: 20px;
+
+}
+#usertab table td
+{ border-bottom: 2px solid black;
+padding: 20px;
+}
+table tr:last-child td{
+border:0 !important;
+}
+
+
+#usertab
+{
+
+  width: 60vw;
+color: white;
+  margin:  auto;
+  position:relative;
+
+}
+
+
+
+
+#usertab h1{
+ font-size: 80px;
+}
+#usertab p
+{
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+color: white;
+margin: auto;
+display: block;
+
 
 }
 
