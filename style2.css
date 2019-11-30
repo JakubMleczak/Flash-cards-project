@@ -5,16 +5,13 @@
     margin: 0;
 font-family: 'Poiret One', cursive;
 }
-body
-{
 
-}
 section
 {
     background-image: url(lud.jpg);
     background-size: cover;
   background-position:-320px;
-    height: 100vh;
+    height: 100%;
     width: 50vw;
     position: fixed;
 }
@@ -57,7 +54,7 @@ flex-direction: column;
   flex-direction: row;
   left: 0px;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
 }
 #obrazek
 {
@@ -75,8 +72,8 @@ main div
 
   background-color: #E6E3FF;
   color: black;
-  width: 50vw;
-  height: 50vh;
+   width: 50vw;
+height: 50vh;
 /* border:5px solid red; */
 /* box-sizing: border-box; */
 }
@@ -167,25 +164,8 @@ right: 15%;
 background-color: transparent;
 
 }
-#ranking
-{
-background-image: url("ludblur.jpg");
-width: 100vw;
-height: 100vh;
-background-position: 0px;
-position: static;
 
-}
-#ranking main #title
-{
 
-margin-right: 40vh;
-height: 25vh;
-}
-#ranking main #title p
-{
-  padding: 5vh;
-}
 #jezyk2 div a, #zestawy div a
 {
   display:block;
@@ -198,7 +178,7 @@ height: 25vh;
 {
   background-image: url("ludblurBIG.jpg");
   background-attachment: fixed;
-  width: 100vw;
+  min-width: 100vw;
 height: auto;
   background-position: 0px;
   position: static;
@@ -208,7 +188,7 @@ height: auto;
 #dodawanie
 {
 
-  width: 70vw;
+  width: 70%;
 color: white;
   margin:  auto;
   position:relative;
@@ -334,12 +314,7 @@ width: auto;
     display: block;
 margin-bottom: 30px;
 }
-body, html
-{
-width: 100%;
-height: 100%;
 
-}
 
 
 section input
@@ -439,7 +414,10 @@ color: white;
 
 }
 
-
+#dod
+{
+  min-height: 100vh;
+}
 
 
 #usertab h1{
@@ -459,5 +437,167 @@ display: block;
 
 @media (max-width: 1000px)
 {
+#jezyk div
+{
+min-width: 100vh;
+font-size: 110px;
+}
+section
+{
+  position: relative;
+  height: auto;
+}
+#jezyk p
+{
 
+font-size: 210px;
+}
+.icon
+{
+  width: 200px;
+  height: 200px;
+}
+#dod #back
+{
+top:20px;
+  left: 300px;
+}
+#dod
+{ height: 100%;
+  font-size: 30px;
+}
+#dod p
+{
+  font-size: 140px;
+}
+
+#dod main
+{
+  width: 80%;
+}
+#dod input
+{
+  width: 100%;
+  height: 100px;
+  font-size: 70px;
+}
+#bdod
+{
+  height: 100%;
+}
+#obrazek
+{
+  display: none;
+}
+
+#zestawy div
+{
+
+  width: 100vw;
+  font-size: 50px;
+
+}
+#zestawy div a p
+{
+
+padding-top: 300px;
+padding-bottom: 200px;
+  font-size: 150px;
+  text-align: center;
+}
+#fiszka
+{
+  overflow:hidden;
+
+}
+#fiszka #back
+{
+top:20px;
+  left: 300px;
+}
+#fiszka .icon
+{
+  width: 150px;
+  height: 150px;
+}
+#fiszka main #tlumaczenie, #fiszka main #nazwa
+{
+  min-height: 60vh;
+  width: 70vw;
+}
+#nastepne
+{
+ left: 2px;
+  height: 150px;
+  width: 150px;
+overflow: hidden;
+
+}
+#poprzednie
+{
+  right: 2px;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+}
+#fiszka main p
+{
+  padding-top:30vw;
+  font-size:200px;
+  word-wrap: break-word;
+}
+.max
+{
+  min-height: 100vh;
+min-width: 100vw;
+  overflow: hidden;
+}
+#dod input[type="radio"]
+{
+  width: 80px;
+  height:80px;
+
+}
+.maly
+{
+  padding-top: 300px !important;
+}
+#rola, #klasa
+{
+  width: 100%;
+  font-size: 70px;
+  clear: both;
+  float: none;
+}
+#dod
+{
+  min-height:100vh;
+}
+body,html
+{
+/* min-width: 100%; */
+/* min-height: 100%; */
+}
+#dod
+{
+
+width: 100%;
+min-height: 100vh;
+}
+#usertab table
+{
+  width: auto;
+}
+table th,td
+{
+  font-size: 100px;
+
+}
+ main div
+{
+  height: auto;
+}
+.nazwa
+{
+  font-size: 100px;
 }
