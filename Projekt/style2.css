@@ -1,0 +1,612 @@
+
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|Bungee+Shade|Poiret+One&display=swap&subset=latin-ext');
+*{
+    padding: 0;
+    margin: 0;
+font-family: 'Poiret One', cursive;
+}
+
+section
+{
+    background-image: url(img/lud.jpg);
+    background-size: cover;
+  background-position:-320px;
+    height: 100%;
+    width: 50vw;
+    position: fixed;
+}
+.icon
+{
+  position: absolute;
+  top:20px;
+  width: 90px;
+  height:90px;
+  z-index: 1;
+  position: fixed;
+}
+#wyloguj
+{
+
+  left: 100px;
+}
+.icon img
+{
+  width: 100%;
+  height: 100%;
+}
+#back
+{
+  left: 100px;
+  top: 150px;
+}
+
+main
+{
+  position: absolute;
+right: 0px;
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+
+}
+#jezyk
+{
+  flex-direction: row;
+  left: 0px;
+  width: 100vw;
+  min-height: 100vh;
+}
+#obrazek
+{
+
+position: absolute;
+top:50%;
+left: 50%;
+transform: translateX(-50%) translateY(-50%) ;
+width: 300px;
+height: 300px;
+}
+
+main div
+{
+
+  background-color: #E6E3FF;
+  color: black;
+   width: 50vw;
+height: 50vh;
+/* border:5px solid red; */
+/* box-sizing: border-box; */
+}
+main div:nth-child(even)
+{
+  background-color: #CCCDE8;
+}
+#jezyk div
+{
+  width: 50vw;
+  height: 50vh;
+
+
+}
+#zestawy div:hover , #jezyk div:hover
+{
+  background-color: #400207;
+  color: white;
+}
+main div p
+{
+
+  font-size: 80px;
+   text-align: center;
+   padding-top: 15%;
+}
+
+#fiszka
+{
+background-image: url("img/ludblur.jpg");
+width: 100vw;
+height: 100vh;
+background-position: 0px;
+position: static;
+}
+#fiszka main
+{
+width: 100%;
+height: 100%;
+
+}
+#fiszka main img
+{
+  width: 100%;
+  height: 100%;
+}
+#fiszka main p
+{
+  font-size: 100px;
+}
+#fiszka main  #nazwa
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+transform: translateX(-50%) translateY(-50%) ;
+flex: none;
+z-index: 2;
+
+}
+#fiszka main #tlumaczenie
+{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+transform: translateX(-50%) translateY(-50%) ;
+flex: none;
+z-index: 1;
+
+}
+#nastepne
+{
+position: absolute;
+top:45%;
+left: 15%;
+
+  width: 100px;
+  background-color:transparent;
+ height: 100px;
+}
+#poprzednie
+{
+   height: 100px;
+  width: 100px;
+  position: absolute;
+  top:45%;
+right: 15%;
+background-color: transparent;
+
+}
+
+
+#jezyk2 div a, #zestawy div a
+{
+  display:block;
+   width:100%;
+     height: 100%;
+     color: inherit;
+     text-decoration:none;
+}
+#dod
+{
+  background-image: url("img/ludblurBIG.jpg");
+  background-attachment: fixed;
+  min-width: 100vw;
+height: auto;
+  background-position: 0px;
+  position: static;
+
+}
+
+#dodawanie
+{
+
+  width: 70%;
+color: white;
+  margin:  auto;
+  position:relative;
+  /* top: 50%;
+  left:50%;
+  transform: translateX(-50%) translateY(-50%); */
+
+}
+.linia
+{
+  height: auto;
+}
+#dodawanie form
+{
+  font-size: 30px;
+  margin-top: 20px;
+  width: 100%;
+
+
+
+}
+
+#zaloguj
+{
+
+  width: 10px;
+  padding: 10px;
+  margin-top: 40vh;
+  font-size: 80px;
+
+}
+#dodawanie h1{
+ font-size: 80px;
+}
+#dodawanie p
+{
+  font-size: 60px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+
+}
+#dodawanie ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgray;
+  opacity: 1;
+}
+#user
+{
+
+  width: 40vw;
+color: white;
+  margin:  auto;
+  position:relative;
+
+}
+
+#user form
+{
+  font-size: 30px;
+  margin-top: 10px;
+  width: 100%;
+
+
+
+}
+
+#zaloguj
+{
+
+  width: 10px;
+  padding: 10px;
+  margin-top: 40vh;
+  font-size: 80px;
+
+}
+#user h1{
+ font-size: 80px;
+}
+#user p
+{
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+color: white;
+
+}
+#user ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: lightgray;
+  opacity: 1;
+}
+#user div
+{
+  height: auto;
+}
+#rola
+{
+  color: white;
+  width:50%;
+  float: left;
+  background-color: inherit;
+}
+#rola input , #klasa input
+{  border: none;
+color: black;
+margin-right: 10px;
+width: auto;
+
+}
+#rola p, #klasa p
+{
+  text-align: inherit;
+}
+#klasa
+{   color: white;
+  background-color: inherit;
+  width: 50%;
+  float: left;
+}
+#srodek
+{
+
+    margin: auto;
+    display: block;
+margin-bottom: 30px;
+}
+
+
+
+section input
+{
+      border: none;
+      border-bottom: 1px solid red;
+      background: transparent;
+      outline: none;
+      color: black;
+      font-size: 30px;
+      padding: 10px;
+      margin-bottom: 30px;
+      width: 100%;
+}
+.pojecie
+{
+  width: 30%;
+  margin-right: 20px;
+
+}
+.add
+{
+  width: 100%;
+  background-color:inherit;
+
+}
+.add button
+{
+  border: none;
+  outline: none;
+  height: 60px;
+  background: #1c8adb;
+  color: #fff;
+  font-size: 30px;
+  width: 130px;
+  border-radius: 20px;
+display: block;
+  font-weight: bold;
+  margin: auto;
+}
+.linia
+{
+  background-color:inherit !important;
+width: 80%;
+margin: auto;
+}
+section input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 70px;
+    background: #1c8adb;
+    color: #fff;
+    font-size: 40px;
+    width: 150px;
+    border-radius: 20px;
+    margin: 40px;
+    font-weight: bold;
+
+
+}
+#przyciskdodaj
+{
+  margin: auto;
+}
+#usertab table
+{
+  border: 7px solid black;
+  font-size: 30px;
+  width: 100%;
+  border-radius: 40px;
+  text-align: center;
+border-spacing: 0;
+}
+
+#usertab table th
+{  border-bottom: 5px solid black;
+padding: 20px;
+
+}
+#usertab table td
+{ border-bottom: 2px solid black;
+padding: 20px;
+}
+table tr:last-child td{
+border:0 !important;
+}
+
+
+#usertab
+{
+
+  width: 60vw;
+color: white;
+  margin:  auto;
+  position:relative;
+
+}
+
+#dod
+{
+  min-height: 100vh;
+}
+
+
+#usertab h1{
+ font-size: 80px;
+}
+#usertab p
+{
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+color: white;
+margin: auto;
+display: block;
+
+
+}
+td img
+{
+  width: 70px;
+  height: 70px;
+}
+
+@media (max-width: 1000px)
+{
+#jezyk div
+{
+min-width: 100vw;
+font-size: 110px;
+}
+section
+{
+  position: relative;
+  height: auto;
+}
+#jezyk p
+{
+
+font-size: 210px;
+}
+.icon
+{
+  width: 200px;
+  height: 200px;
+}
+#dod, #back
+{
+top:20px;
+  left: 300px;
+}
+#dod
+{ height: 100%;
+  font-size: 30px;
+}
+#dod p
+{
+  font-size: 140px;
+}
+
+#dod main
+{
+  width: 80%;
+}
+#dod input
+{
+  width: 100%;
+  height: 100px;
+  font-size: 70px;
+}
+#bdod
+{
+  height: 100%;
+}
+#obrazek
+{
+  display: none;
+}
+
+#zestawy div
+{
+
+  width: 100vw;
+  font-size: 50px;
+
+}
+#zestawy div a p
+{
+
+padding-top: 300px;
+padding-bottom: 200px;
+  font-size: 150px;
+  text-align: center;
+}
+#fiszka
+{
+  overflow:hidden;
+
+}
+#fiszka #back
+{
+top:20px;
+  left: 300px;
+}
+#fiszka .icon
+{
+  width: 150px;
+  height: 150px;
+}
+#fiszka main #tlumaczenie, #fiszka main #nazwa
+{
+  min-height: 60vh;
+  width: 70vw;
+}
+#nastepne
+{
+ left: 2px;
+  height: 150px;
+  width: 150px;
+overflow: hidden;
+
+}
+#poprzednie
+{
+  right: 2px;
+  height: 150px;
+  width: 150px;
+  overflow: hidden;
+}
+#fiszka main p
+{
+  padding-top:30vw;
+  font-size:200px;
+  word-wrap: break-word;
+}
+.max
+{
+  min-height: 100vh;
+min-width: 100vw;
+  overflow: hidden;
+}
+#dod input[type="radio"]
+{
+  width: 80px;
+  height:80px;
+
+}
+.maly
+{
+  padding-top: 300px !important;
+}
+#rola, #klasa
+{
+  width: 100%;
+  font-size: 70px;
+  clear: both;
+  float: none;
+}
+#dod
+{
+  min-height:100vh;
+}
+body,html
+{
+/* min-width: 100%; */
+/* min-height: 100%; */
+}
+#dod
+{
+
+width: 100%;
+min-height: 100vh;
+}
+#usertab table
+{
+  width: auto;
+}
+table th,td
+{
+  font-size: 50px;
+
+}
+#usertab
+{
+  overflow:auto;
+}
+.nazwa
+{
+  font-size: 100px;
+}
+#dodawanie div
+{
+  height: 100%;
+}
