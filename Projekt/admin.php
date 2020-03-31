@@ -1,3 +1,6 @@
+<?php
+  require_once("skrypty/check.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +14,7 @@
   <section>
   </section>
     <div id="wyloguj" class="icon">
-      <a href="main.html"><img src="img/log.png" alt="wyloguj"></a>
+      <a href="skrypty/logout.php"><img src="img/log.png" alt="wyloguj"></a>
 
     </div>
 
@@ -21,11 +24,11 @@ dodawanie div przez php
      -->
 
      <div>
-       <a href="uzytkownik.html"> <p>użytkownicy</p></a>
+       <a href="uzytkownik.php"> <p>użytkownicy</p></a>
 
      </div>
      <div>
-      <a href="dodawanie.html"> <p>dodawanie zestawu</p></a>
+      <a href="dodawanie.php"> <p>dodawanie zestawu</p></a>
      </div>
 
 
