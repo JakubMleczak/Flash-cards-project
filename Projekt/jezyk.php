@@ -1,3 +1,7 @@
+<?php
+  require_once("skrypty/check.php");
+  require_once("skrypty/conn.php")
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,32 +15,29 @@
   <section id="jezyk2">
 
     <div id="wyloguj" class="icon">
-      <a href="main.html"><img src="img/log.png" alt="wyloguj"></a>
+      <a href="skrypty/logout.php"><img src="img/log.png" alt="wyloguj"></a>
 
     </div>
 
    <main id="jezyk">
-     <!--
-dodawanie div przez php
-     -->
+    <?php
+    $sql4= "SELECT * FROM jezyki";
+    $result3 = mysqli_query($conn,$sql4);
 
-     <div>
-       <a href="zestawy.html">   <p>jezyk zestawu</p></a>
+    while ($opt = mysqli_fetch_assoc($result3)) {
+echo<<<HTML
+<div>
+  <a href="zestawy.php?jezyk=$opt[id_jezyk]">  <p>$opt[jezyk]</p></a>
+</div>
+HTML;
 
-     </div>
-     <div>
-       <a href="zestawy.html">   <p>jezyk zestawu</p></a>
+    }
+     ?>
 
-     </div>
-     <div>
-       <a href="zestawy.html">   <p>jezyk zestawu</p></a>
 
-     </div>
-     <div>
-       <p>jezyk zestawu</p>
-     </div>
+
    <img src="img/ludkolo.png" alt="kolo" id="obrazek">
-   </main>
+ </main>
 
   </section>
 </body>

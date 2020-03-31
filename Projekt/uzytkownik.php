@@ -1,3 +1,6 @@
+<?php
+  require_once("skrypty/check.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,11 +14,11 @@
   <section>
   </section>
     <div id="wyloguj" class="icon">
-      <a href="main.html"><img src="img\log.png" alt="wyloguj"></a>
+      <a href="index.php"><img src="img\log.png" alt="wyloguj"></a>
 
     </div>
     <div id="back" class="icon">
-      <a href="admin.html"><img src="img/cofnij.png" alt="back"></a>
+      <a href="admin.php"><img src="img/cofnij.png" alt="back"></a>
     </div>
 
    <main id="zestawy">
@@ -24,11 +27,11 @@ dodawanie div przez php
      -->
 
      <div>
-       <a href="nowy.html"> <p>nowy użytkownik</p></a>
+       <a href="nowy.php"> <p>nowy użytkownik</p></a>
 
      </div>
      <div>
-      <a href="edycja.html"> <p>modyfikuj użytkowników</p></a>
+      <a href="edycja.php"> <p>modyfikuj użytkowników</p></a>
      </div>
 
 

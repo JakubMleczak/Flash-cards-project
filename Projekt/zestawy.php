@@ -1,3 +1,7 @@
+<?php
+  require_once("skrypty/check.php");
+  require_once("skrypty/conn.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,46 +15,34 @@
   <section>
   </section>
     <div id="wyloguj" class="icon">
-      <a href="main.html"><img src="img/log.png" alt="wyloguj"></a>
+      <a href="index.php"><img src="img/log.png" alt="wyloguj"></a>
 
     </div>
     <div id="back" class="icon">
-      <a href="jezyk.html"><img src="img/cofnij.png" alt="back"></a>
+      <a href="jezyk.php"><img src="img/cofnij.png" alt="back"></a>
     </div>
 
    <main id="zestawy">
-     <!--
-dodawanie div przez php
-     -->
+    <?php
+  $jezyk = $_GET['jezyk'];
+    $sql4= "SELECT * FROM zestawy where id_jezyk='$jezyk'";
+    $result3 = mysqli_query($conn,$sql4);
 
-     <div>
-       <a href="fiszka.html"><p> nazwa zestawu 1</p></a>
+    while ($opt = mysqli_fetch_assoc($result3)) {
+  echo<<<HTML
+  <div>
+  <a href="fiszka.php?nazwa=$opt[id_zestawu]">  <p>$opt[nazwa]</p></a>
+  </div>
+  HTML;
 
-     </div>
-     <div>
-      <a href="fiszka.html"> <p> nazwa zestawu 2</p></a>
-     </div>
-     <div>
-      <a href="fiszka.html"> <p> nazwa zestawu 3</p></a>
-     </div>
-     <div>
-      <a href="fiszka.html"><p> nazwa zestawu 4</p></a>
-     </div>
-      <div>
-      <a href="fiszka.html"> <p> nazwa zestawu 5</p></a>
-    </div>
-      <div>
-        <a href="fiszka.html"> <p> nazwa zestawu 6</p></a>
-      </div>
+    }
+
+     ?>
+
+
+
 
    </main>
 
 </body>
 </html>
-
-<!-- -wyswietlanie fiszek
--wyloguj
-- dodawanie zestawu(nauczyciel)
--edytowanie zestawu(nauczyciel)
--dodawanie i usuwanie userow
--->

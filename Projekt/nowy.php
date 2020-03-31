@@ -1,3 +1,6 @@
+<?php
+  require_once("skrypty/check.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,10 +14,10 @@
   <section id="dod">
 
     <div id="wyloguj" class="icon">
-      <a href="main.html"><img src="img/log.png" alt="wyloguj"></a>
+      <a href="index.php"><img src="img/log.png" alt="wyloguj"></a>
     </div>
     <div id="back" class="icon">
-      <a href="uzytkownik.html"><img src="img/cofnij.png" alt="back"></a>
+      <a href="uzytkownik.php"><img src="img/cofnij.png" alt="back"></a>
     </div>
 
 
@@ -23,29 +26,56 @@
 
   <main id="user">
 
-    <form method="post" action="reg.php">
+    <form method="post" action="skrypty/add.php">
     <p class="maly">Login</p>
     <input type="text" name="login" placeholder="Login">
     <p>Haslo</p>
-    <input type="password" name="haslo" placeholder="Haslo">
-    <p>Status</p>
-    <input type="text" name="status" placeholder="Status">
+    <input type="text" name="haslo" placeholder="Haslo">
+    <p>Imie</p>
+    <input type="text" name="nazwisko" placeholder="Imie">
+    <p>Nazwisko</p>
+    <input type="text" name="imie" placeholder="Nazwisko">
+
 
 </br></br>
 <div id="rola">
   <p >Rola</p>
-  <input type="radio"  name="Rola">Admin <br/>
-  <input type="radio"  name="Rola">Uczen <br/>
+  <select name="nauczyciel">
+    <option value="1">Nauczyciel</option>
+    <option value="0">Uczen</option>
+  </select>
 
 
 </div>
 <div id="klasa">
-  <p >Klasa</p>
-  <input type="radio" name="1D" >1D <br/>
-  <input type="radio" name="2D" >2D <br/>
-  <input type="radio" name="3D" >3D <br/>
-  <input type="radio" name="4D" >4D <br/>
 
+  <p >Klasa</p>
+
+  <?php
+  require_once("skrypty/conn.php");
+  $sql4= "SELECT * FROM `klasy`";
+  $result7 = mysqli_query($conn,$sql4);
+echo<<<SEL
+<select name="klasa">
+
+SEL;
+  while ($opt = mysqli_fetch_assoc($result7)) {
+$val = $opt['id_klasy'];
+$in = $opt['symbol_klasy'];
+
+
+echo<<<HTML
+<option value="$val">$in</option>
+HTML;
+
+
+}
+echo<<<ZAMEK
+</select>
+<br>
+<br>
+ZAMEK;
+ ?>
 </div>
 
 
